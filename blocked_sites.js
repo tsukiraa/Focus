@@ -1,0 +1,1 @@
+window.location.href = "142.250.75.14";
