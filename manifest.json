@@ -2,14 +2,13 @@
     "manifest_version": 3,
     "name": "Focus.",
     "description": "Focus is site blocking extension made in mind for usage of one specific person.",
-    "version": "1.0.1",
+    "version": "1.1.0",
     
         "content_scripts": [
           {
             "js": ["blocked_sites.js"],
             "matches": [
-              "https://www.youtube.com/*",
-              "https://www.reddit.com/*"
+              "https://www.youtube.com/*"
             ]
           }]
 }
