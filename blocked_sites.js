@@ -5,9 +5,18 @@ for (let i = 0; i < a.length; i++) {
     const element = a[i];
     console.log(element.href)
     element.href ="https://www.google.com/" ;
+    var ch = element.children
+    for (let i = 0; i < ch.length; i++) {
+      if(ch[i].tagName == "H3"){
+        ch[i].children[1].title = "Blocked by Focus."
+        ch[i].children[1].ariaLabel = "Blocked by Focus."
+        ch[i].children[1].textContent = "Blocked by Focus."
+      }
+    }
 }
 
   }, 10000); 
+  //https://i.ytimg.com/vi/Xal3RTspi9Y/hqdefault_live.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD1w0lP1Et9dQChYStiuOoCGVHZPA
   let url = document.URL
   setInterval(displayHello, 5000);
 
