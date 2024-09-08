@@ -1,7 +1,7 @@
 
   //https://i.ytimg.com/vi/Xal3RTspi9Y/hqdefault_live.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD1w0lP1Et9dQChYStiuOoCGVHZPA
   let url = document.URL
-  setInterval(displayHello, 1000);
+  setInterval(displayHello, 500);
 
   function displayHello() {
     if(url != document.URL){
