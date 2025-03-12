@@ -1,8 +1,11 @@
 let url = document.URL
-setInterval(displayHello, 500);
-function displayHello() {
-    if(url != document.URL || url == "https://www.reddit.com/?feed=home" || "https://www.reddit.com/r/*"){
-        window.location.replace("https://www.google.com/");
-    }
+
+if(url != document.URL){
+    window.location.replace("https://www.google.com/");
 }
+var a= document.getElementsByTagName("shreddit-feed")
+for (let i = 0; i < a.length; i++) {
+a[i].remove()
+}
+
 
