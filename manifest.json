@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Focus.",
     "description": "Focus is site blocking extension made in mind for usage of one specific person.",
     "version": "1.2.0",
@@ -15,5 +15,11 @@
             "matches": [
               "https://www.reddit.com/*"
             ]
+          },{
+            "js": ["blocked_stream.js"],
+            "matches": [
+              "https://www.stream.cz/*"
+            ]
           }]
+          
 }
